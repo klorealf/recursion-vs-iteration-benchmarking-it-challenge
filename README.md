@@ -18,7 +18,7 @@ We'll begin our iterative vs. recursive benchmarking by looking at the two metho
 
 We're going to use each method to calculate the factorial of a series of numbers:  0, 1000, 2000, 3000, 4000, and 5000.  And for each number, we'll calculate it's factorial 500 times.  In the end, for each of the numbers, we'll be able to say something like, "It took *n* seconds to iteratively calculate 3000 factorial 500 times, and it took *m* seconds to do so recursively."
 
-As we benchmark the performance of each method for each value, we should chart the results ([sample factorial results chart layout](chart-examples/factorial.png)).  This will help us to visually compare how each method compares to the other as the numbers increase.
+As we benchmark the performance of each method for each value, we should chart the results on a piece of paper, whiteboard, etc. ([sample factorial results chart layout](chart-examples/factorial.png)).  This will help us to visually compare how each method compares to the other as the numbers increase.
 
 *Note:* Running each method 500 times for each value helps to smooth out noise—such as another process on the computer taking some of the CPU's resources while one of the benchmarks was running.  It also gives us numbers that we can better relate to, since computers calculate so quickly.
 
