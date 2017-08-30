@@ -1,4 +1,5 @@
 require_relative '../factorial'
+require 'benchmark'
 
 describe 'factorial_iterative' do
   known_factorials = { 0  => 1,
@@ -6,9 +7,16 @@ describe 'factorial_iterative' do
                        2  => 2,
                        3  => 6,
                        4  => 24,
-                       15 => 1307674368000 }
+                       15 => 1307674368000
+
+                     }
+
+
+  }
 
   known_factorials.each do |number, known_factorial|
+
+  puts Benchmark.measure {factorial_iterative(number) * }
 
     it "calculates the factorial of #{number}" do
       calculated_factorial = factorial_iterative(number)
@@ -35,3 +43,4 @@ describe 'factorial_recursive' do
 
   end
 end
+
