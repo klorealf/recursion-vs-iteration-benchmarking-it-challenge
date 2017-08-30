@@ -8,6 +8,16 @@ while i <= 5000
   puts Benchmark.measure {factorial_iterative(i)* 500 }
 
   puts "Recursive: #{i}"
-  puts Benchmark.measure {factorial_iterative(i)* 500 }
+  puts Benchmark.measure {factorial_recursive(i)* 500 }
   i += 1000
+end
+
+i=0
+while i <= 30
+  puts "Iterative: #{i}"
+  puts Benchmark.measure {iterative_nth_fibonacci_number(i)* 500 }
+
+  puts "Recursive: #{i}"
+  puts Benchmark.measure {recursive_nth_fibonacci_number(i)* 500 }
+  i += 5
 end
